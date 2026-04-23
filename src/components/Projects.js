@@ -2,13 +2,6 @@ import React from 'react';
 
 const projects = [
   {
-    title: 'Applyzenooo',
-    url: 'https://github.com/mohankocherlakota/Applyzenooo',
-    tags: ['Multi-Agent', 'LLM', 'Python'],
-    description:
-      'Multi-agent resume and cover letter formatter that customises your application documents for each job posting — powered by autonomous AI agents working in concert.',
-  },
-  {
     title: 'Answer Engine LLM',
     url: 'https://github.com/mohankocherlakota/answer-engine-llm',
     tags: ['LLM', 'RAG', 'TypeScript', 'React'],
