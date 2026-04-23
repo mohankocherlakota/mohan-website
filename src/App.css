@@ -447,63 +447,223 @@ section {
   }
 }
 /* Contact Section */
-.contact-groups {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-  margin-top: 1.5rem;
+.contact-subtitle {
+  color: #718096;
+  font-size: 1.05rem;
+  margin: -0.5rem 0 1.8rem 0;
 }
 
-.contact-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.contact-row:first-child {
-  justify-content: flex-start;
-}
-
-.contact-item {
+/* LinkedIn Featured Card */
+.linkedin-featured-card {
   display: flex;
   align-items: center;
-  font-size: 1.08rem;
-  color: #3182ce;
+  justify-content: space-between;
+  gap: 1.5rem;
+  background: linear-gradient(135deg, #0a66c2 0%, #004182 100%);
+  border-radius: 20px;
+  padding: 1.75rem 2rem;
+  margin-bottom: 1.5rem;
   text-decoration: none;
-  font-weight: 500;
-  transition: color 0.16s, background 0.16s, box-shadow 0.16s;
-  padding: 0.7rem 1.2rem;
-  border-radius: 12px;
-  background: #f8fafc;
+  box-shadow: 0 8px 32px rgba(10, 102, 194, 0.28);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.linkedin-featured-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 40px rgba(10, 102, 194, 0.38);
+}
+
+.linkedin-card-glow {
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 240px;
+  height: 240px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.linkedin-card-left {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.linkedin-logo-wrapper {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 14px;
+  padding: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  backdrop-filter: blur(4px);
+}
+
+.linkedin-logo-icon {
+  font-size: 2.2rem;
+  color: #fff;
+}
+
+.linkedin-card-info {
+  min-width: 0;
+}
+
+.linkedin-card-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.linkedin-card-title {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.78);
+  margin-bottom: 0.35rem;
+}
+
+.linkedin-card-url {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: 'Courier New', monospace;
+}
+
+.linkedin-connect-btn {
+  background: #fff;
+  color: #0a66c2;
+  font-weight: 700;
+  font-size: 0.92rem;
+  padding: 0.65rem 1.5rem;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+  transition: box-shadow 0.18s, transform 0.18s;
+}
+
+.linkedin-featured-card:hover .linkedin-connect-btn {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  transform: translateY(-1px);
+}
+
+.btn-ext-icon {
+  font-size: 0.75rem;
+  opacity: 0.75;
+}
+
+/* Contact Cards Grid */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 0.9rem;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 1rem 1.1rem;
+  background: #fff;
   border: 1.5px solid #e2e8f0;
-  width: fit-content;
-  box-shadow: 0 1px 4px rgba(49,130,206,0.07);
+  border-radius: 14px;
+  text-decoration: none;
+  transition: border-color 0.18s, box-shadow 0.18s, transform 0.18s;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.05);
 }
 
-.contact-item:hover {
-  color: #2b6cb0;
-  background: #ebf8ff;
-  box-shadow: 0 2px 12px rgba(49,130,206,0.13);
+.contact-card:hover {
+  border-color: #3182ce;
+  box-shadow: 0 4px 18px rgba(49, 130, 206, 0.13);
+  transform: translateY(-2px);
 }
 
-.contact-icon {
-  margin-right: 0.7rem;
-  font-size: 1.25rem;
-  color: #2b6cb0;
+.contact-card-icon-wrap {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contact-card-icon {
+  font-size: 1.3rem;
+}
+
+.email-wrap   { background: #fff5f5; color: #e53e3e; }
+.github-wrap  { background: #f7f7f7; color: #24292e; }
+.medium-wrap  { background: #f0faf5; color: #00ab6c; }
+.pdf-wrap     { background: #fff5f5; color: #e53e3e; }
+.coffee-wrap  { background: #fffbeb; color: #d69e2e; }
+
+.email-wrap   .contact-card-icon { color: #e53e3e; }
+.github-wrap  .contact-card-icon { color: #24292e; }
+.medium-wrap  .contact-card-icon { color: #00ab6c; }
+.pdf-wrap     .contact-card-icon { color: #e53e3e; }
+.coffee-wrap  .contact-card-icon { color: #d69e2e; }
+
+.contact-card-content {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.contact-card-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #a0aec0;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin-bottom: 0.1rem;
+}
+
+.contact-card-value {
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: #2d3748;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* Responsive */
 @media (max-width: 600px) {
-  .contact-row {
+  .linkedin-featured-card {
     flex-direction: column;
+    align-items: flex-start;
+    padding: 1.3rem 1.25rem;
+    gap: 1.1rem;
+  }
+
+  .linkedin-connect-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .linkedin-card-name {
+    font-size: 1.05rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;
     gap: 0.7rem;
   }
-  .contact-item {
-    font-size: 0.97rem;
-    padding: 0.5rem 0.7rem;
-  }
-  .contact-icon {
-    font-size: 1.1rem;
-    margin-right: 0.5rem;
+}
+
+@media (max-width: 400px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
   }
 }
