@@ -8,6 +8,8 @@ const experiences = [
     location: 'Boston, MA (Remote)',
     badge: 'GenAI · Agentic',
     badgeClass: 'exp-badge-genai',
+    logo: '/logos/altimetrik.svg',
+    logoBg: '#fff5eb',
     companyInitial: 'A',
     companyColor: 'exp-company-alt',
     bullets: [
@@ -24,6 +26,8 @@ const experiences = [
     location: 'Boston, MA (Remote)',
     badge: 'RAG · MCP',
     badgeClass: 'exp-badge-rag',
+    logo: '/logos/altimetrik.svg',
+    logoBg: '#fff5eb',
     companyInitial: 'A',
     companyColor: 'exp-company-alt',
     bullets: [
@@ -41,6 +45,8 @@ const experiences = [
     location: 'Boston, MA',
     badge: 'LLM · Research',
     badgeClass: 'exp-badge-llm',
+    logo: '/logos/vesterai.svg',
+    logoBg: '#e8f6fd',
     companyInitial: 'V',
     companyColor: 'exp-company-vester',
     bullets: [
@@ -70,6 +76,8 @@ const experiences = [
     location: 'India',
     badge: 'Engineering',
     badgeClass: 'exp-badge-swe',
+    logo: '/logos/capgemini.svg',
+    logoBg: '#e8f3fb',
     companyInitial: 'C',
     companyColor: 'exp-company-cap',
     bullets: [
@@ -91,8 +99,14 @@ function Experience() {
             <div className="exp-card">
               <div className="exp-header">
                 <div className="exp-left">
-                  <div className={`exp-company-icon ${exp.companyColor}`}>
-                    {exp.companyInitial}
+                  <div
+                    className="exp-company-icon"
+                    style={exp.logo ? { background: exp.logoBg, padding: '5px' } : undefined}
+                  >
+                    {exp.logo
+                      ? <img src={exp.logo} alt={exp.company} className="exp-company-logo" />
+                      : <span className={exp.companyColor} style={{ color: '#fff', fontWeight: 800 }}>{exp.companyInitial}</span>
+                    }
                   </div>
                   <div className="exp-role-company">
                     <span className="exp-role">{exp.role}</span>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <g fill="#00A3E0">
+    <!-- Left vest panel: wide at top shoulder, narrows to waist, widens to hem -->
+    <path d="M15,12 L38,12 L38,18 C38,18 42,22 42,28 L36,55 L28,55 L34,30 C34,30 30,24 28,20 L15,20 Z"/>
+    <!-- Left lower panel -->
+    <path d="M28,55 L36,55 L34,88 L20,88 Z"/>
+    <!-- Right vest panel -->
+    <path d="M85,12 L62,12 L62,18 C62,18 58,22 58,28 L64,55 L72,55 L66,30 C66,30 70,24 72,20 L85,20 Z"/>
+    <!-- Right lower panel -->
+    <path d="M72,55 L64,55 L66,88 L80,88 Z"/>
+    <!-- Center gap -->
+  </g>
+</svg>

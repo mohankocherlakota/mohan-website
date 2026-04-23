@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Capgemini: blue spade/teardrop with inner loop -->
+  <path d="M50,5 C50,5 90,28 90,58 C90,80 72,95 50,95 C28,95 10,80 10,58 C10,28 50,5 50,5 Z" fill="#0070AD"/>
+  <!-- White inner cutout -->
+  <path d="M50,30 C50,30 72,43 72,60 C72,72 62,80 50,80 C38,80 28,72 28,60 C28,43 50,30 50,30 Z" fill="white"/>
+  <!-- Blue inner fill for loop -->
+  <path d="M50,44 C50,44 60,50 60,59 C60,65 55,70 50,70 C45,70 40,65 40,59 C40,50 50,44 50,44 Z" fill="#0070AD"/>
+  <!-- White swirl accent -->
+  <path d="M44,56 C41,49 45,39 50,37 C44,40 38,50 43,58 Z" fill="white"/>
+</svg>
