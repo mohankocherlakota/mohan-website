@@ -9,45 +9,49 @@ function About() {
           <span role="img" aria-label="wave">👋</span> Hello, I'm Mohan —
         </p>
         <p>
-          An <strong>AI Developer & Machine Learning Engineer</strong> with a Master's in Applied Machine Intelligence from <strong>Northeastern University</strong>. I specialise in building intelligent systems that sit at the intersection of <strong>Large Language Models</strong>, <strong>multi-agent orchestration</strong>, and <strong>financial analytics</strong> — turning research-grade AI into production-ready tools.
+          An <strong>AI Engineer</strong> specialising in <strong>multi-agent systems</strong>, <strong>RAG pipelines</strong>, and production-grade <strong>LLM architectures</strong> — with a Master's in Applied Machine Intelligence from <strong>Northeastern University</strong> (GPA 3.8). Currently at <strong>Altimetrik</strong>, I design and deliver agentic AI systems that operate at enterprise scale across the full SDLC lifecycle.
         </p>
 
         <div className="about-stats">
           <div className="about-stat">
-            <span className="about-stat-num">3+</span>
+            <span className="about-stat-num">4+</span>
             <span className="about-stat-label">Years Experience</span>
           </div>
           <div className="about-stat">
-            <span className="about-stat-num">4</span>
-            <span className="about-stat-label">AI Roles</span>
+            <span className="about-stat-num">300+</span>
+            <span className="about-stat-label">Engineers Trained</span>
           </div>
           <div className="about-stat">
-            <span className="about-stat-num">7+</span>
+            <span className="about-stat-num">9+</span>
             <span className="about-stat-label">Projects Shipped</span>
+          </div>
+          <div className="about-stat">
+            <span className="about-stat-num">3.8</span>
+            <span className="about-stat-label">GPA</span>
           </div>
         </div>
 
         <ul className="about-highlights">
           <li>
-            <strong>Multi-Agent & LLM Systems:</strong> Built orchestration platforms integrating LLMs with real-world APIs (PubMed, Wiley) to automate scientific literature workflows and industrial sensor data pipelines.
+            <strong>Agentic AI at Scale:</strong> Built multi-agent data pipelines (OpenAI, Claude, open-source), MCP-based autonomous SDLC deployment to GitHub, and version-controlled RAG systems with vector databases — all with human-in-the-loop governance.
           </li>
           <li>
-            <strong>Predictive & Risk ML:</strong> Engineered ML dashboards improving decision-making accuracy by 40%, with end-to-end pipelines covering data ingestion, model training, and deployment.
+            <strong>AI Enablement:</strong> Trained 300+ engineers on GenAI fundamentals through advanced multi-agent architectures, evaluation frameworks, and observability. Delivered enterprise Copilot L&D programs covering prompt engineering, custom MCP servers, and governance.
           </li>
           <li>
-            <strong>Full-Stack AI:</strong> Comfortable across the stack — from React frontends and Flask/FastAPI services to Docker, Azure, and CI/CD pipelines.
+            <strong>LLM Research & Orchestration:</strong> Built LLM-based research orchestration at VesterAI and ML-driven risk analytics at Traxidty — end-to-end from data ingestion to production.
           </li>
           <li>
-            <strong>Continuous Builder:</strong> Always exploring the frontier — RAG architectures, vision models, generative AI for finance, and agentic workflows.
+            <strong>Recognised Builder:</strong> OpenAI Global Codex Hackathon participant; semi-finalist at MIT Energy HackAIthon and MIT AI in Education Hackathon. Certified by OpenAI, AWS, and Hugging Face.
           </li>
         </ul>
 
         <blockquote className="about-quote">
-          "The most impactful AI isn't the most complex — it's the one that makes the right decision at the right moment."
+          "The most impactful AI isn't the most complex — it's the one that makes the right decision at the right moment, with humans always in control."
         </blockquote>
 
         <p>
-          Outside of work I'm exploring the latest in LLM research, contributing to open-source projects, and occasionally buying too much coffee.
+          Outside work I'm exploring the frontier of agentic AI, contributing to open-source, and occasionally buying too much coffee.
         </p>
         <p className="about-connect">
           <strong>Let's build something intelligent together.</strong>

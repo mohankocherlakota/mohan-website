@@ -2,50 +2,80 @@ import React from 'react';
 
 const experiences = [
   {
+    role: 'AI Engineer',
+    company: 'Altimetrik',
+    date: 'Jan 2026 – Present',
+    location: 'Princeton, NJ',
+    badge: 'GenAI · Agentic',
+    badgeClass: 'exp-badge-genai',
+    companyInitial: 'A',
+    companyColor: 'exp-company-alt',
+    bullets: [
+      'Part of an end-to-end AI enablement program training 300+ engineers — spanning GenAI fundamentals through advanced RAG, multi-agent systems, SDLC integration, evaluation frameworks, and observability.',
+      'Delivered enterprise Copilot L&D programs covering prompt engineering, multi-agent usage, custom MCP server development, and governance best practices.',
+      'Built Labyrinth — an AI-powered engineering workflow automating ticket analysis, code implementation, and PR creation across Slack, Jira, GitHub, Snowflake, and Databricks via OpenAI Codex.',
+      'Developed Codex (autonomous code deployment & testing) and an enterprise-scale Copilot Training platform from scratch.',
+    ],
+  },
+  {
+    role: 'Associate AI Engineer',
+    company: 'Altimetrik',
+    date: 'Jul 2025 – Dec 2025',
+    location: 'Princeton, NJ',
+    badge: 'RAG · MCP',
+    badgeClass: 'exp-badge-rag',
+    companyInitial: 'A',
+    companyColor: 'exp-company-alt',
+    bullets: [
+      'Developed a multi-agent data pipeline using LangChain, OpenAI, Claude, and open-source models on cloud architectures — ensuring portability and scalability across enterprise environments.',
+      'Implemented a full SDLC deployment framework: agents autonomously analyse requirements, generate SQL, validate, auto-generate test cases, and deploy production-ready code to GitHub via MCP.',
+      'Built a human-in-the-loop approval framework across each SDLC stage, allowing enterprise reviewers to approve, reject, or inject instructions at every orchestration checkpoint.',
+      'Architected version-controlled RAG pipelines and vector databases with automatic document updates triggered by schema, naming, or knowledge changes.',
+      'Redesigned custom connectors for Confluence and Jira to enable automated knowledge extraction and retrieval.',
+    ],
+  },
+  {
     role: 'AI Developer Intern',
     company: 'VesterAI',
     date: 'Jan 2025 – Mar 2025',
-    badge: 'AI / LLM',
-    badgeClass: 'exp-badge-ai',
+    location: 'Remote, US',
+    badge: 'LLM · Research',
+    badgeClass: 'exp-badge-llm',
+    companyInitial: 'V',
+    companyColor: 'exp-company-vester',
     bullets: [
-      'Engineered a multi-agent orchestration platform using LLMs and API integrations with PubMed and Wiley, delivering curated, metadata-rich literature summaries for researchers and accelerating scientific discovery.',
-      'Built AI pipelines for industrial sensor data from pharmaceutical liquid processing systems, automating control processes and capturing key metrics (motor speed, amperage) to elevate operational efficiency.',
+      'Engineered an LLM-based multi-agent orchestration platform with PubMed and Wiley API integrations, delivering curated, metadata-rich literature summaries and accelerating scientific discovery.',
+      'Built AI pipelines for industrial sensor data from pharmaceutical liquid processing systems, automating control processes and capturing key metrics (motor speed, amperage).',
     ],
   },
   {
     role: 'Data Scientist Intern',
     company: 'Traxidty Solution',
     date: 'Sep 2024 – Dec 2024',
-    badge: 'Data Science',
+    location: 'United States',
+    badge: 'ML · Analytics',
     badgeClass: 'exp-badge-ds',
+    companyInitial: 'T',
+    companyColor: 'exp-company-trax',
     bullets: [
-      'Built a predictive analytics dashboard for project risk assessment using ML, improving decision-making accuracy by 40% vs. traditional methods.',
-      'Implemented a risk score classification system (Low / Medium / High), enhancing risk management and mitigation strategies.',
-      'Developed a Flask-based chatbot interface for querying project details, risks, and mitigation strategies, improving accessibility and engagement.',
-      'Demonstrated end-to-end AI project skills: Python, ML libraries, and advanced data manipulation.',
-    ],
-  },
-  {
-    role: 'AI Developer Intern',
-    company: 'Altimetrik',
-    date: 'Jul 2024 – Sep 2024',
-    badge: 'AI / Product',
-    badgeClass: 'exp-badge-ai',
-    bullets: [
-      'Developed innovative AI-driven products leveraging React, Python, and OpenAI technologies.',
-      'Collaborated in agile teams to drive AI solutions and optimise product performance, contributing across design, development, and deployment.',
+      'Built a predictive analytics dashboard for project risk assessment using ML, improving decision-making accuracy by 40% over traditional methods.',
+      'Implemented a risk score classification system (Low / Medium / High) enhancing risk management capabilities.',
+      'Developed a Flask-based chatbot for querying project details, risks, and mitigation strategies.',
     ],
   },
   {
     role: 'Senior Software Engineer',
     company: 'Capgemini',
     date: 'Jun 2021 – Jul 2023',
+    location: 'India',
     badge: 'Engineering',
     badgeClass: 'exp-badge-swe',
+    companyInitial: 'C',
+    companyColor: 'exp-company-cap',
     bullets: [
-      'Led development and decommissioning of 25+ applications, resolving browser issues, implementing admin control systems, and creating Azure DevOps pipelines.',
-      'Streamlined processes by migrating legacy applications to Vue.js, improving UX and adding new features.',
-      'Managed a team of three, introducing structured status update workflows to enhance communication and issue resolution.',
+      'Led development and decommissioning of 25+ applications, implementing admin control systems and Azure DevOps pipelines.',
+      'Migrated legacy applications to Vue.js, improving UX and reducing load times.',
+      'Managed a team of three, introducing structured status workflows to enhance communication and issue resolution.',
     ],
   },
 ];
@@ -60,13 +90,21 @@ function Experience() {
             <div className="exp-dot" />
             <div className="exp-card">
               <div className="exp-header">
-                <div className="exp-role-company">
-                  <span className="exp-role">{exp.role}</span>
-                  <span className="exp-company">{exp.company}</span>
+                <div className="exp-left">
+                  <div className={`exp-company-icon ${exp.companyColor}`}>
+                    {exp.companyInitial}
+                  </div>
+                  <div className="exp-role-company">
+                    <span className="exp-role">{exp.role}</span>
+                    <span className="exp-company">{exp.company}</span>
+                    <span className="exp-location">{exp.location}</span>
+                  </div>
                 </div>
-                <span className="exp-date">{exp.date}</span>
+                <div className="exp-right">
+                  <span className="exp-date">{exp.date}</span>
+                  <span className={`exp-badge ${exp.badgeClass}`}>{exp.badge}</span>
+                </div>
               </div>
-              <span className={`exp-badge ${exp.badgeClass}`}>{exp.badge}</span>
               <ul className="exp-bullets">
                 {exp.bullets.map((b, j) => (
                   <li key={j}>{b}</li>

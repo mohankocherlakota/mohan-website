@@ -2,24 +2,42 @@ import React from 'react';
 
 const skillsData = [
   {
-    title: 'Core ML & AI',
+    title: 'Agentic AI & LLMs',
     icon: '🤖',
     items: [
-      'Supervised & Unsupervised Learning',
-      'Deep Learning: CNNs, RNNs, Transformers',
-      'NLP: Sentiment analysis, language modeling',
-      'LLMs: Fine-tuning, RAG, model deployment',
-      'Multi-agent orchestration',
+      'Multi-Agent Systems & Orchestration',
+      'LLMs: Fine-tuning, RAG, Deployment',
+      'LangChain · LlamaIndex',
+      'MCP (Model Context Protocol)',
+      'Vector Databases',
+      'Agentic AI Pipelines',
+      'Human-in-the-loop Workflows',
     ],
   },
   {
-    title: 'Programming',
+    title: 'ML & Deep Learning',
+    icon: '🧠',
+    items: [
+      'Supervised & Unsupervised Learning',
+      'Deep Learning: CNNs, RNNs, Transformers',
+      'PyTorch · JAX · TensorFlow · scikit-learn',
+      'NLP: Sentiment analysis, language modeling',
+      'Computer Vision · OpenCV',
+      'WhisperX · Speech / Audio AI',
+      'CUDA',
+    ],
+  },
+  {
+    title: 'Programming & Frameworks',
     icon: '💻',
     items: [
-      'Python (TensorFlow, PyTorch, scikit-learn)',
+      'Python — primary language',
+      'TypeScript / JavaScript (React, Node.js)',
       'SQL — database management',
-      'JavaScript / TypeScript — full-stack',
+      'FastAPI · Flask',
       'R — statistical modeling',
+      'n8n — workflow automation',
+      'FFmpeg',
     ],
   },
   {
@@ -27,10 +45,11 @@ const skillsData = [
     icon: '⚙️',
     items: [
       'Docker & containerisation',
-      'Azure / GCP',
+      'Azure · GCP',
       'CI/CD Pipelines',
-      'REST APIs (Flask / FastAPI)',
       'Azure DevOps',
+      'REST APIs',
+      'GitHub Actions',
     ],
   },
   {
