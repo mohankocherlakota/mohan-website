@@ -13,66 +13,46 @@ function App() {
   return (
     <div>
       <header className="header">
-        <h1 className="header-title">Mohan Kocherlakota</h1>
-        <img src={myImage} width={80} alt="Profile" className="profile-image" />
-        <p className="header-subtitle">Machine Learning Engineer | Data Enthusiast</p>
-        <nav className="navbar">
-          <Link
-            activeClass="active"
-            to="about"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-            className="nav-link"
-          >About</Link>
-          <Link
-            activeClass="active"
-            to="experience"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-            className="nav-link"
-          >Experience</Link>
-          <Link
-            activeClass="active"
-            to="skills"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-            className="nav-link"
-          >Skills</Link>
-          <Link
-            activeClass="active"
-            to="projects"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-            className="nav-link"
-          >Projects</Link>
-          <Link
-            activeClass="active"
-            to="blog"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-            className="nav-link"
-          >Blog</Link>
-          <Link
-            activeClass="active"
-            to="contact"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-            className="nav-link"
-          >Contact</Link>
-        </nav>
+        <div className="header-inner">
+          <div className="profile-image-wrapper">
+            <img src={myImage} alt="Mohan Kocherlakota" className="profile-image" />
+          </div>
+
+          <h1 className="header-title">Mohan Kocherlakota</h1>
+
+          <p className="header-role">GenAI Engineer</p>
+
+          <div className="header-tags">
+            <span className="header-tag">Multi-Agent AI</span>
+            <span className="header-tag">LLM</span>
+            <span className="header-tag">RAG</span>
+            <span className="header-tag">MCP</span>
+          </div>
+
+          <p className="header-company">
+            <span className="company-dot" />
+            Altimetrik &nbsp;·&nbsp; Boston, MA
+          </p>
+
+          <nav className="navbar">
+            {['about','experience','skills','projects','blog','contact'].map(section => (
+              <Link
+                key={section}
+                activeClass="active"
+                to={section}
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                className="nav-link"
+              >
+                {section.charAt(0).toUpperCase() + section.slice(1)}
+              </Link>
+            ))}
+          </nav>
+        </div>
       </header>
+
       <main className="container">
         <section id="about"><About /></section>
         <section id="experience"><Experience /></section>

@@ -2,41 +2,62 @@ import React from 'react';
 
 function About() {
   return (
-<section id="about" className="about-section">
-  <h2 className="about-title">About Me</h2>
-  <div className="about-content">
-    <p className="about-greeting">
-      <span role="img" aria-label="wave">👋</span> Hello Enthusiasts,
-    </p>
-    <p>
-      I’m a <strong>Machine Learning Engineer</strong> with a Master’s degree in Applied Machine Intelligence from <strong>Northeastern University</strong>, specializing in finance. My journey bridges the worlds of <strong>data science</strong>, <strong>artificial intelligence</strong>, and <strong>financial analytics</strong>, empowering organizations to make smarter, data-driven decisions.
-    </p>
-    <ul className="about-highlights">
-      <li>
-        <strong>Hands-on AI Model Development:</strong> Experienced in building robust machine learning models to solve complex problems-optimizing trading strategies, detecting fraud, and automating risk assessment.
-      </li>
-      <li>
-        <strong>Technical Skills:</strong> Proficient in Python, deep learning frameworks (TensorFlow, PyTorch), and cloud-based deployment.
-      </li>
-      <li>
-        <strong>Collaboration:</strong> Skilled at translating business needs into technical solutions and communicating insights to both technical and non-technical stakeholders.
-      </li>
-      <li>
-        <strong>Continuous Learner:</strong> Always eager to explore and apply the latest advancements in machine learning.
-      </li>
-    </ul>
-    <blockquote className="about-quote">
-      “The future of finance is intelligent, transparent, and accessible-and I’m excited to be part of that transformation.”
-    </blockquote>
-    <p>
-      When I’m not coding or exploring new datasets, I’m likely reading about fintech innovations, contributing to open-source projects, or enjoying a good cup of coffee.
-    </p>
-    <p className="about-connect">
-      <strong>Let’s connect</strong> and build the next generation of intelligent financial solutions together.
-    </p>
-  </div>
-</section>
+    <section id="about" className="about-section">
+      <h2 className="about-title">About Me</h2>
+      <div className="about-content">
+        <p className="about-greeting">
+          <span role="img" aria-label="wave">👋</span> Hello, I'm Mohan —
+        </p>
+        <p>
+          An <strong>AI Engineer</strong> specialising in <strong>multi-agent systems</strong>, <strong>RAG pipelines</strong>, and production-grade <strong>LLM architectures</strong> — with a Master's in Applied Machine Intelligence from <strong>Northeastern University</strong> (GPA 3.8). Currently at <strong>Altimetrik</strong>, I design and deliver agentic AI systems that operate at enterprise scale across the full SDLC lifecycle.
+        </p>
 
+        <div className="about-stats">
+          <div className="about-stat">
+            <span className="about-stat-num">4+</span>
+            <span className="about-stat-label">Years Experience</span>
+          </div>
+          <div className="about-stat">
+            <span className="about-stat-num">300+</span>
+            <span className="about-stat-label">Engineers Trained</span>
+          </div>
+          <div className="about-stat">
+            <span className="about-stat-num">9+</span>
+            <span className="about-stat-label">Projects Shipped</span>
+          </div>
+          <div className="about-stat">
+            <span className="about-stat-num">3.8</span>
+            <span className="about-stat-label">GPA</span>
+          </div>
+        </div>
+
+        <ul className="about-highlights">
+          <li>
+            <strong>Agentic AI at Scale:</strong> Built multi-agent data pipelines (OpenAI, Claude, open-source), MCP-based autonomous SDLC deployment to GitHub, and version-controlled RAG systems with vector databases — all with human-in-the-loop governance.
+          </li>
+          <li>
+            <strong>AI Enablement:</strong> Trained 300+ engineers on GenAI fundamentals through advanced multi-agent architectures, evaluation frameworks, and observability. Delivered enterprise Copilot L&D programs covering prompt engineering, custom MCP servers, and governance.
+          </li>
+          <li>
+            <strong>LLM Research & Orchestration:</strong> Built LLM-based research orchestration at VesterAI and ML-driven risk analytics at Traxidty — end-to-end from data ingestion to production.
+          </li>
+          <li>
+            <strong>Recognised Builder:</strong> OpenAI Global Codex Hackathon participant; semi-finalist at MIT Energy HackAIthon and MIT AI in Education Hackathon. Certified by OpenAI, AWS, and Hugging Face.
+          </li>
+        </ul>
+
+        <blockquote className="about-quote">
+          "The most impactful AI isn't the most complex — it's the one that makes the right decision at the right moment, with humans always in control."
+        </blockquote>
+
+        <p>
+          Outside work I'm exploring the frontier of agentic AI, contributing to open-source, and occasionally buying too much coffee.
+        </p>
+        <p className="about-connect">
+          <strong>Let's build something intelligent together.</strong>
+        </p>
+      </div>
+    </section>
   );
 }
 
