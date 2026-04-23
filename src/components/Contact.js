@@ -77,7 +77,7 @@ function Contact() {
         </a>
 
         <a
-          href="YourResume.pdf"
+          href="/Mohan_Resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="contact-card"
@@ -93,7 +93,7 @@ function Contact() {
         </a>
 
         <a
-          href="https://www.buymeacoffee.com/yourusername"
+          href="https://buymeacoffee.com/mohan_koch"
           target="_blank"
           rel="noopener noreferrer"
           className="contact-card"
