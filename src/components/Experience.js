@@ -56,7 +56,7 @@ const experiences = [
   },
   {
     role: 'Data Scientist Intern',
-    company: 'Traxidty Solution',
+    company: 'Traxidy Solutions',
     date: 'Sep 2024 – Dec 2024',
     location: 'Canada (Remote)',
     badge: 'ML · Analytics',
