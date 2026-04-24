@@ -14,7 +14,7 @@ function About() {
 
         <div className="about-stats">
           <div className="about-stat">
-            <span className="about-stat-num">4+</span>
+            <span className="about-stat-num">5+</span>
             <span className="about-stat-label">Years Experience</span>
           </div>
           <div className="about-stat">
@@ -22,7 +22,7 @@ function About() {
             <span className="about-stat-label">Engineers Trained</span>
           </div>
           <div className="about-stat">
-            <span className="about-stat-num">9+</span>
+            <span className="about-stat-num">10+</span>
             <span className="about-stat-label">Projects Shipped</span>
           </div>
           <div className="about-stat">
@@ -39,7 +39,7 @@ function About() {
             <strong>AI Enablement:</strong> Trained 300+ engineers on GenAI fundamentals through advanced multi-agent architectures, evaluation frameworks, and observability. Delivered enterprise Copilot L&D programs covering prompt engineering, custom MCP servers, and governance.
           </li>
           <li>
-            <strong>LLM Research & Orchestration:</strong> Built LLM-based research orchestration at VesterAI and ML-driven risk analytics at Traxidty — end-to-end from data ingestion to production.
+            <strong>LLM Research & Orchestration:</strong> Built LLM-based research orchestration at VesterAI and ML-driven risk analytics at Traxidty — end-to-end from data ingestion to production, with a 40% improvement in decision accuracy.
           </li>
           <li>
             <strong>Recognised Builder:</strong> OpenAI Global Codex Hackathon participant; semi-finalist at MIT Energy HackAIthon and MIT AI in Education Hackathon. Certified by OpenAI, AWS, and Hugging Face.
@@ -51,7 +51,7 @@ function About() {
         </blockquote>
 
         <p>
-          Outside work I'm exploring the frontier of agentic AI, contributing to open-source, and occasionally buying too much coffee.
+          Outside work I'm exploring the frontier of agentic AI, mentoring engineers entering the AI space, and contributing to the broader open-source ecosystem.
         </p>
         <p className="about-connect">
           <strong>Let's build something intelligent together.</strong>
