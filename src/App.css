@@ -139,9 +139,11 @@ body {
 }
 
 .nav-link:hover,
+.nav-link:focus,
 .nav-link.active {
   background: rgba(49, 130, 206, 0.22);
   color: #90cdf4;
+  outline: none;
 }
 
 @media (max-width: 600px) {
@@ -522,11 +524,12 @@ section {
   border-radius: 12px;
   padding: 1.5rem;
   border: 1px solid #e2e8f0;
-  transition: transform 0.2s;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .skill-category:hover {
   transform: translateY(-4px);
+  box-shadow: 0 4px 18px rgba(49, 130, 206, 0.10);
 }
 
 .skill-category h3 {
@@ -568,9 +571,15 @@ section {
 /* Responsive Design */
 @media (max-width: 768px) {
   .skills-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .skills-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .skill-category {
     padding: 1rem;
   }
@@ -594,7 +603,8 @@ section {
   overflow: hidden;
 }
 
-.project-card:hover {
+.project-card:hover,
+.project-card:focus-within {
   transform: translateY(-4px);
   box-shadow: 0 8px 28px rgba(49, 130, 206, 0.13);
   border-color: #bee3f8;
@@ -697,7 +707,12 @@ section {
   transition: transform 0.16s, box-shadow 0.16s;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+}
+
+.blog-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .blog-card:hover {
@@ -723,10 +738,29 @@ section {
   text-decoration: underline;
 }
 
+.blog-description {
+  font-size: 0.93rem;
+  color: #4a5568;
+  line-height: 1.6;
+  margin: 0.4rem 0 0.75rem;
+}
+
+.blog-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: auto;
+}
+
 .blog-date {
-  font-size: 0.98rem;
+  font-size: 0.85rem;
   color: #718096;
-  margin-top: 0.2rem;
+  display: block;
+}
+
+.blog-read-time {
+  font-size: 0.82rem;
+  color: #a0aec0;
   display: block;
 }
 
@@ -898,7 +932,8 @@ section {
   box-shadow: 0 2px 8px rgba(44, 62, 80, 0.05);
 }
 
-.contact-card:hover {
+.contact-card:hover,
+.contact-card:focus-within {
   border-color: #3182ce;
   box-shadow: 0 4px 18px rgba(49, 130, 206, 0.13);
   transform: translateY(-2px);

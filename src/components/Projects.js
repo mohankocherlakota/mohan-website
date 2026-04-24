@@ -6,56 +6,56 @@ const projects = [
     url: 'https://github.com/mohankocherlakota/answer-engine-llm',
     tags: ['LLM', 'RAG', 'TypeScript', 'React'],
     description:
-      'Perplexity-inspired answer engine leveraging LLMs and RAG to deliver precise, source-backed, context-aware responses with a React frontend and Node.js backend.',
+      'Perplexity-inspired answer engine that delivers precise, source-backed responses using RAG and LLMs — grounding every answer in cited, retrievable context rather than model hallucination.',
   },
   {
     title: 'Multi-Speaker Transcription',
     url: 'https://github.com/mohankocherlakota/multi_speaker_transcription',
     tags: ['WhisperX', 'NER', 'Python', 'Audio AI'],
     description:
-      'Advanced Multiple Speaker Diarization (MSD) application using WhisperX with Named Entity Recognition for audio tagging and speaker identification.',
+      'Speaker-level transcription pipeline using WhisperX and NER, accurately attributing speech to individual speakers and tagging entities across multi-participant audio recordings.',
   },
   {
     title: 'RAG Application',
     url: 'https://github.com/mohankocherlakota/RAG-App',
     tags: ['RAG', 'Vector DB', 'Python'],
     description:
-      'Retrieval-Augmented Generation application for enhanced document Q&A and multi-source information retrieval using vector databases.',
+      'End-to-end Retrieval-Augmented Generation system for document Q&A — ingests multi-source knowledge bases into a vector store and retrieves context-precise answers at query time.',
   },
   {
     title: 'Azure OpenAI Shopping Bot',
     url: 'https://github.com/mohankocherlakota/AzureOpenAI_Shopping_Bot',
     tags: ['Azure', 'OpenAI', 'Chatbot'],
     description:
-      'Conversational AI shopping assistant deployed on Azure with OpenAI integration, product catalogue search, and natural language query handling.',
+      'Conversational shopping assistant on Azure that handles natural language product queries, searches a live catalogue, and guides users from discovery to purchase in a single chat flow.',
   },
   {
     title: 'Azure OpenAI Cognitive Search',
     url: 'https://github.com/mohankocherlakota/Azure_OpenAI_CognitiveSearch',
     tags: ['Azure', 'OpenAI', 'Cognitive Search', 'Python'],
     description:
-      'Enterprise search solution combining Azure Cognitive Search with OpenAI for intelligent document retrieval and question answering over large knowledge bases.',
-  },
-  {
-    title: 'GenAI Mutual Funds',
-    url: 'https://github.com/mohankocherlakota/genai_mf',
-    tags: ['GenAI', 'Finance', 'Python'],
-    description:
-      'Generative AI-powered analysis and insights platform for mutual funds and financial products, combining LLMs with financial data APIs.',
+      'Enterprise knowledge retrieval system combining Azure Cognitive Search with OpenAI — enables accurate Q&A over large internal document repositories with semantic ranking.',
   },
   {
     title: 'Llama3 Vision',
     url: 'https://github.com/mohankocherlakota/llama3_vision',
     tags: ['Llama-3', 'Vision AI', 'Multimodal', 'Python'],
     description:
-      'Vision AI project utilising Llama-3 and multimodal models for advanced image and document understanding tasks.',
+      'Multimodal reasoning pipeline using Llama-3 vision capabilities to interpret, extract, and summarise information from images and document scans without manual annotation.',
+  },
+  {
+    title: 'GenAI Mutual Funds',
+    url: 'https://github.com/mohankocherlakota/genai_mf',
+    tags: ['GenAI', 'Finance', 'Python'],
+    description:
+      'LLM-powered analysis platform that combines live financial data APIs with generative AI to produce plain-language fund comparisons and investment summaries.',
   },
   {
     title: 'Stock Prediction',
     url: 'https://github.com/mohankocherlakota/stock_predit',
     tags: ['ML', 'Finance', 'Time Series'],
     description:
-      'Stock price prediction tool using machine learning and technical indicators across multiple tech stocks, with backtesting and performance visualisation.',
+      'ML-driven stock price forecasting tool using technical indicators and time-series models across multiple tickers, with backtesting to validate strategy performance.',
   },
 ];
 
