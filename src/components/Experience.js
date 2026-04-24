@@ -61,6 +61,8 @@ const experiences = [
     location: 'Canada (Remote)',
     badge: 'ML · Analytics',
     badgeClass: 'exp-badge-ds',
+    logo: '/traxidy.png',
+    logoBg: '#fff8f0',
     companyInitial: 'T',
     companyColor: 'exp-company-trax',
     bullets: [
