@@ -33,7 +33,7 @@ function About() {
 
         <ul className="about-highlights">
           <li>
-            <strong>Agentic AI at Scale:</strong> Built multi-agent data pipelines (OpenAI, Claude, open-source), MCP-based autonomous SDLC deployment to GitHub, and version-controlled RAG systems with vector databases — all with human-in-the-loop governance.
+            <strong>Agentic AI at Scale:</strong> Built multi-agent data pipelines (OpenAI, Claude, open-source) orchestrated with LangGraph, MCP/FastMCP-based autonomous SDLC deployment to GitHub, and version-controlled hybrid RAG systems with vector databases — evaluated with DeepEval/RAGAS and traced via Langfuse/LangSmith/OpenTelemetry, all with human-in-the-loop governance.
           </li>
           <li>
             <strong>AI Enablement:</strong> Trained 300+ engineers on GenAI fundamentals through advanced multi-agent architectures, evaluation frameworks, and observability. Delivered enterprise Copilot L&D programs covering prompt engineering, custom MCP servers, and governance.
